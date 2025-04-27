@@ -87,7 +87,7 @@ if auto_refresh:
     while True:
         main_loop()
         time.sleep(refresh_interval)
-        st.experimental_rerun()
+        st.rerun()
 else:
     if st.button("🔄 Refresh Now"):
         main_loop()
